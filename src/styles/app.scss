@@ -223,3 +223,22 @@ button {
         transform: rotateZ(360deg);
     }
 }
+
+
+// main page button style
+.app {
+    margin-left: 49rem;
+    margin-top: 18rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(5, 107, 224);
+    color: white;
+    width: 20%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

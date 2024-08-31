@@ -93,31 +93,32 @@ const TransactionManagement = () => {
               ${state},
               ${country},
               ${pinCode},
-            `}</p>
+            `}
+          </p>
 
-            <h5>Amount Info</h5>
-            <p>Subtotal: {subtotal}</p>
-            <p>ShippingCharges: {shippingCharges}</p>
-            <p>Tax: {tax}</p>
-            <p>Discount: {discount}</p>
-            <p>Total: {totalAmount}</p>
+          <h5>Amount Info</h5>
+          <p>Subtotal: {subtotal}</p>
+          <p>ShippingCharges: {shippingCharges}</p>
+          <p>Tax: {tax}</p>
+          <p>Discount: {discount}</p>
+          <p>Total: {totalAmount}</p>
 
-            <h5>Status</h5>
-            <p>Status:{" "}
-              <span 
-                className={
-                  status === "Delivered" 
-                  ? "purple" 
-                  : status === "Shipped" 
-                  ? "green" 
-                  : "red"
-                }
-              >
-                {status}
-              </span>
-            </p>
+          <h5>Status</h5>
+          <p>Status:{" "}
+            <span 
+              className={
+                status === "Delivered" 
+                ? "purple" 
+                : status === "Shipped" 
+                ? "green" 
+                : "red"
+              }
+            >
+              {status}
+            </span>
+          </p>
 
-            <button onClick={updateHandler}>Process Status</button>
+          <button onClick={updateHandler}>Process Status</button>
         </article>
       </main>
     </div>
