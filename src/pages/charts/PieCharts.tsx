@@ -7,9 +7,9 @@ import { categories } from '../../assets/data.json';
 const PieCharts = () => {
   return (
     <div className="admin-container">
-      {/* Sidebar */}
+      {/* dashboard Sidebar */}
       <AdminSidebar />
-
+ 
       {/* main */}
       <main className="chart-container">
         <h1>Pie & Doughnut Charts</h1>
@@ -28,7 +28,7 @@ const PieCharts = () => {
                 offset={[10, 20, 50]}
               />
             </div>
-              <h2>Order Fulfillment Ratio</h2>
+            <h2>Order Fulfillment Ratio</h2>
         </section>
 
         <section>

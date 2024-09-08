@@ -17,6 +17,7 @@ const dashboard = () => {
 
       {/* main */}
       <main className="dashboard">
+        {/* for searching bar */}
         <div className="bar">
           <BsSearch />
           <input type="text" placeholder="Search for data, users, docs" />
@@ -24,6 +25,7 @@ const dashboard = () => {
           <img src={userpic} alt="Users" />
         </div>
 
+        {/* for upper four box */}
         <section className="widget-container">
           <WidgetItem 
             percent={40}
@@ -55,7 +57,10 @@ const dashboard = () => {
           />
         </section>
 
+        {/* Bar chart - Revenue & Transactions & Inventory Here */}
         <section className="graph-container">
+
+          {/* Bar chart - Revenue & Transactions */}
           <div className="revenue-chart">
             <h2>Revenue & Transaction</h2>
             {/* Graph Here */}
@@ -69,9 +74,9 @@ const dashboard = () => {
               // horizontal= {true}
             />
           </div>
+            {/* Inventory Here */}
           <div className="dashboard-categories">
             <h2>Inventory</h2>
-            {/* Inventory Here */}
             <div>
               {
                 data.categories.map((i) => (
@@ -86,7 +91,10 @@ const dashboard = () => {
           </div>
         </section>
 
+        {/* Gender ratio & Top-Transaction */}
         <section className="transaction-container">
+
+          {/* Gender-Ratio */}
           <div className="gender-chart">
             <h2>Gender Ratio</h2>
               {/* {Chart} */}
@@ -99,7 +107,7 @@ const dashboard = () => {
               />
               <p><BiMaleFemale /></p>
           </div>
-          {/* Table */}
+          {/* Top Transaction */}
           <DashboardTable
             data = {data.transaction} 
           />

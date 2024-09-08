@@ -276,8 +276,7 @@ const Products = () => {
         {Table()}
       </main>
 
-      {/* + button */}
-
+      {/* + button and all of the items using in the NewProduct.tsx */}
       <Link to='/admin/products/new' 
         className="create-product-btn">
           <FaPlus />

@@ -1,6 +1,7 @@
 .dashboard {
     overflow-y: auto;
 
+    // using for searching box
     .bar {
         height: 4rem;
         @include flex(row, unset);
@@ -22,6 +23,7 @@
         }
     }
 
+    // for upper four box
     .widget-container {
 
         @include flex(row, space-between, stretch, 2rem);
@@ -72,6 +74,7 @@
         }
     }
 
+    // Bar chart - Revenue & Transactions  and  Inventory Here 
     .graph-container {
         @include flex(row, unset, unset, 2rem);
         padding: 0 2rem 2rem 0;
@@ -80,6 +83,7 @@
             border-radius: 10px;
         }
 
+        // Bar -Chart
         .revenue-chart {
             width: 100%; 
             padding: 1rem 3rem;
@@ -91,6 +95,7 @@
             }
         }
 
+        //  Inventory Here
         .dashboard-categories {
             width: 100%;
             max-width: 16rem;
@@ -140,18 +145,21 @@
     }
 
 
+    // Gender ratio & Top-Transaction
     .transaction-container {
         display: flex;
         gap: 2rem;
         padding: 0 2rem 2rem 0;
         height: 30rem;
 
+        // Gender Ratio only for div
         >div {
             background-color: white;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.132);
             border-radius: 10px;
         }
         
+        // Gender Ration for all the element
         .gender-chart {
             width: 100%;
             max-width: 20rem;
@@ -171,6 +179,7 @@
             }
         }
 
+        // Top-Transaction
         .transaction-box {
             width: 100%;
             padding: 1rem;

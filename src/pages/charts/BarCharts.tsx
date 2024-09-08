@@ -19,7 +19,7 @@ const months = [
 const BarCharts = () => {
   return (
     <div className="admin-container">
-      {/* Sidebar */}
+      {/* dashboard Sidebar */}
       <AdminSidebar />
 
       {/* main */}
@@ -43,7 +43,7 @@ const BarCharts = () => {
                 data_1={[200, 444, 343, 556, 778, 455, 990, 698, 492, 842, 55, 736]}
                 data_2={[]}
                 title_1="Products"
-                title_2=""
+                title_2="Users"
                 bgColor_1={`hsl(180, 40%, 50%)`}
                 bgColor_2=""
                 labels={months}

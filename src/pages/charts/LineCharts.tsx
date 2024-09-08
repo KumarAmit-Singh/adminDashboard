@@ -19,7 +19,7 @@ const months = [
 const LineCharts = () => {
   return (
     <div className="admin-container">
-      {/* Sidebar */}
+      {/* dashboard Sidebar */}
       <AdminSidebar />
 
       {/* main */}

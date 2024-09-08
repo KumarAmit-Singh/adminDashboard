@@ -33,12 +33,13 @@ const columns: Column<DataType>[] = [
     
 ];
 
+// using for dashboard table in dashboard.tsx (top-transaction)
 const DashboardTable = ( {data = []}: {data: DataType[]} ) => {
     return TableHOC<DataType>(
         columns, 
         data,  
         "transaction-box", 
-        "TopTransaction"
+        "Top-Transaction"
     )();   
 }
 

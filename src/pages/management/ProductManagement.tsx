@@ -50,9 +50,10 @@ const ProductManagement = () => {
       {/* main */}
       <main className="product-management">
 
+        {/* for left side of block */}
         <section>
           <strong>
-            ID- VASDJBSFKNDGF
+            ID- VASDJBSFKNDGF 
           </strong>
           <img src={photo} alt="Product" />
           <p>{name}</p>
@@ -66,8 +67,11 @@ const ProductManagement = () => {
           <h3>${price}</h3>
         </section>
 
+        {/* for right side  of block */}
         <article>
-          <form onSubmit={submitHandler}>
+          <form onSubmit={submitHandler} style={{
+            gap: 28
+          }}>
             <h2>Manage</h2>
             <div>
               <label>Name</label>

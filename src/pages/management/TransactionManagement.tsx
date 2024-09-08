@@ -18,6 +18,7 @@ const orderItems: OrderItemType[] = [
 
 const TransactionManagement = () => {
 
+  {/* types.ts have both file names (orderType and orderItemType) */}
   const [order, setOrder] = useState<OrderType>({
     name: 'Amit Singh',
     address: "48 MaharanaPratap Street",
@@ -64,25 +65,33 @@ const TransactionManagement = () => {
 
       {/* main */}
       <main className="product-management">
-        <section style={{
-          padding: "2rem"
-        }}>
+        <section style=
+          {{
+            padding: "1rem"
+          }}
+        >
           <h2>Order Items</h2>
 
+          {/* using for left hand box items */}
+          {/* show order items data in left hand side box */}
+          {/* use especially with order items data */}
           {
-            order.orderItems.map( i => (
+            order.orderItems.map((i, v) => (
               <ProductCard
-                name={i.name}
+                name={i.name} 
                 photo={i.photo}
                 _id={i._id}
                 quantity={i.quantity}
                 price={i.price}
+                key={v}
               />
             ))
           }
         </section>
 
+        {/* Show Order info in right hand side box for transaction management */}
         <article className="shipping-info-card">
+          {/* <div className="shipping-info-card"> */}
           <h1>Order Info</h1>
           <h5>User Info</h5>
           <p>Name: {name}</p>
@@ -119,12 +128,16 @@ const TransactionManagement = () => {
           </p>
 
           <button onClick={updateHandler}>Process Status</button>
+          {/* </div> */}
         </article>
       </main>
     </div>
   )
 }
 
+// using for right hand side box
+// use especially only order items box
+// show order items box in left hand side for transaction management
 const ProductCard = (
  {
   name,

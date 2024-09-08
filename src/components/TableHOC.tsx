@@ -4,9 +4,10 @@ import {
     Column, 
     TableOptions, 
     useSortBy, 
-    usePagination
+    usePagination,
 } from "react-table";
 
+// using for top-transaction in dashbaoard.tsx
 function TableHOC<T extends Object>(
     columns: Column<T>[], 
     data: T[], 

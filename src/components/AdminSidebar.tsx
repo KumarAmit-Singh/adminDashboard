@@ -1,17 +1,25 @@
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
+// Div One, Two and Three are uses for the ICons
+// Div One
 import { AiFillFileText } from "react-icons/ai";
+// 
 import {
+    // Div Two
     FaChartBar,
-    FaChartLine,
     FaChartPie,
+    FaChartLine,
+    // Div Three
     FaGamepad,
     FaStopwatch
-} from "react-icons/fa";
+} from "react-icons/fa";    // 
 import { HiMenuAlt4 } from "react-icons/hi";
+// Div One
 import { IoIosPeople } from "react-icons/io";
 import {
+    // Div Three
     RiCoupon3Fill,
+    // Div One
     RiDashboardFill,
     RiShoppingBag3Fill
 } from "react-icons/ri";
@@ -22,20 +30,23 @@ import {
 } from "react-router-dom";
 
 const AdminSidebar = () => {
-    const location = useLocation()
+    const location = useLocation();
     // console.log(location);
 
-    const [showModal, setShowModal] = useState<boolean>(false);
+    // uses for hamburger open or close depend on the value true or false
+    const [showModal, setShowModal] = useState<boolean>(false);  
 
+    // represent for responsive below 1100-width by default
     const [phoneActive, setPhoneActive] = useState<boolean>(
         window.innerWidth < 1100
     );
 
+    // It handle will automatically refresh the pages of 100% width when the pages is checked for responsive
     const resizeHandler = () => {
         setPhoneActive(window.innerWidth < 1100);
     }
 
-    useEffect(() =>{
+    useEffect(() =>{   // uses of useEffect to perform sideEffect on each renders for responsive pages
         window.addEventListener("resize", resizeHandler);
 
         return() => {
@@ -45,16 +56,20 @@ const AdminSidebar = () => {
 
   return (
     <>
+    {/* uses for show the hamburger */}
         {
         phoneActive 
             && 
         <button 
             id="hamburger"
             onClick={() => setShowModal(true)}>
+                {/* uses for hamburger line */}
                 <HiMenuAlt4 />
         </button>}
 
+        {/* uses for right hand side of the pages */}
         <aside style={
+            // uses for close the hamburger
             phoneActive 
             ?   {
                     width: "20rem",
@@ -67,11 +82,16 @@ const AdminSidebar = () => {
             :   {}
 
         }>
+            {/* uses for the all of the three section */}
             <h2>Logo.</h2>
+            {/* first section - dashboard(dashboard, products, customers, transactions) */}
             <DivOne location={location} />
+            {/* second section - charts(bar, pie and line) */}
             <DivTwo location={location} />
+            {/* third section - apps(stopwatch, coupon and toss) */}
             <DivThree location={location} />
 
+            {/* uses for close button when click the button close the humbarger */}
             {
                 phoneActive && <button id="close-sidebar" onClick={() => setShowModal(false)}>Close</button>
             }
@@ -91,22 +111,6 @@ const DivOne = ({ location }:{ location: Location }) => (
                 Icon={RiDashboardFill} 
                 location={location} 
             />
-            {/* <li style={
-                {
-                    backgroundColor: location.pathname.includes("/admin/dashboard")
-                    ? "rgba(0, 115, 255, 0.1)"
-                    : "white",
-                }
-            }>
-                <Link to={"/admin/dashboard"} style={{
-                    color: location.pathname.includes('/admin/dashboard')
-                    ? "rgb(0, 115, 255)"
-                    : "black"
-                }}>
-                    <RiDashboardFill />
-                    Dashboard
-                </Link>
-            </li> */}
             <Li 
                 url="/admin/products" 
                 text="Products" 
@@ -120,7 +124,8 @@ const DivOne = ({ location }:{ location: Location }) => (
                 location={location} 
             />
             <Li 
-                url="/admin/transaction" text="Transaction" 
+                url="/admin/transaction" 
+                text="Transactions" 
                 Icon={AiFillFileText} 
                 location={location} 
             />
@@ -132,7 +137,7 @@ const DivTwo = ({ location }:{ location: Location }) => (
     <div>
         <h5>Charts</h5>
         <ul>
-            {/* used for nevigate the pages */}
+            {/* used for navigate the pages */}
             <Li 
                 url="/admin/chart/bar" 
                 text="Bar" 
@@ -155,8 +160,7 @@ const DivTwo = ({ location }:{ location: Location }) => (
     </div>
 );
 
-const DivThree = ({ location }:{ location: Location;
- }) => (
+const DivThree = ({ location }:{ location: Location }) => (
     <div>
         <h5>Apps</h5>
         <ul>
@@ -191,7 +195,8 @@ interface LiProps {
     Icon: IconType, 
 }
 
-const Li = ({url, text, location, Icon}: LiProps) => 
+const Li = ({ url, text, location, Icon }: LiProps) => 
+// style for the button link when click the button styling is worked for the particular pages but rest of the pages is ignored.
 <li style={
     {
         backgroundColor: location.pathname.includes(url)
@@ -199,6 +204,8 @@ const Li = ({url, text, location, Icon}: LiProps) =>
         : "white",
     }
 }>
+    {/* It is used for show the item of the pages like-: Link, Icon and the text */}
+    {/* ex-: url link(admin/dashboard), Icon(RiDashboardFill) and text(dashboard)  */}
     <Link to={url} style={{
         color: location.pathname.includes(url)
         ? "rgb(0, 115, 255)"

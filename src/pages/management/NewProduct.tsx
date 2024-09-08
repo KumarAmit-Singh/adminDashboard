@@ -8,6 +8,7 @@ const NewProduct = () => {
   const [stock, setStock] = useState<number>();
   const [photo, setPhoto] = useState<string>();
 
+  // using for images changes
   const changeImageHandler = (
     event: ChangeEvent<HTMLInputElement>) => 
   {
@@ -31,6 +32,7 @@ const NewProduct = () => {
 
       {/* main */}
       <main className="product-management">
+        {/* for using a new product management using NewProduct.tsx */}
         <article>
           <form>
             <h2>New Product</h2>
@@ -70,6 +72,7 @@ const NewProduct = () => {
               />
             </div>
             
+            {/* for using a image or photos */}
             {
               photo && <img src={photo} alt="New Image" />
             }

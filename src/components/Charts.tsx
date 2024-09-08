@@ -15,8 +15,8 @@ import {
     // use for Line Chart
     PointElement,
     LineElement,
-    Filler
     // use for fill Line Chart
+    Filler,
 } from 'chart.js'; 
 
 import { Bar, Doughnut, Line, Pie } from 'react-chartjs-2';
@@ -39,6 +39,7 @@ ChartJS.register(
 );
 
 
+
 // Bar Chart in form of Vertical
 const months = [
     'January', 
@@ -55,16 +56,19 @@ const months = [
     'December',
 ];
 
-
-
 interface BarChartProps {
-    horizontal?: boolean;
+    // uses for the first and second side data
     data_1: number[];
     data_2: number[];
+    // uses for the first and second data side title or lengeds
     title_1: string;
     title_2: string;
+    // uses for the first and second data background 
     bgColor_1: string;
     bgColor_2: string;
+    // when value is true the data show in horizontal form otherwise false is show in vertical form.
+    horizontal?: boolean;
+    // using for bar-graph to handle line or line-months
     labels?: string[];
 }
 
@@ -81,12 +85,13 @@ export const BarChart = ( {
     labels = months
 }: BarChartProps ) => {
 
+    // uses for horizontally y-axis bar graph
     const options:ChartOptions<'bar'> = {
         responsive: true,
-        indexAxis: horizontal ? "y" : "x",
+        indexAxis: horizontal ? "y" : "x",   // uses for horizontally(y-axis) data and vertically(x-axis) data
         plugins: {
             legend: {
-                display: true,
+                display: true,       // uses for display legends(it means that data comparison scene)
             },
             title: {
                 display: false,
@@ -94,12 +99,13 @@ export const BarChart = ( {
             },
         },
 
+        // scaling the line y-axis and x-axis
         scales: {
             y: {
                 beginAtZero: true,
                 grid: {
-                    display: false
-                },
+                    display: true    // for shows data lining when value is true the data line is show on browser
+                },                   // when value is false the data 
             },
 
             x: {
@@ -110,11 +116,13 @@ export const BarChart = ( {
         }
     };
 
+    // uses for horizontally x-axis bar-graph  
     const data:ChartData<"bar", number[], string> = {
+        // using for bar-graph to handle line
         labels,
         datasets: [
             {
-                label: title_1,
+                label: title_1,    
                 data: data_1,
                 backgroundColor: bgColor_1,
                 barThickness: "flex",    
@@ -140,11 +148,17 @@ export const BarChart = ( {
 
 // Doughnut Chart
 interface DoughnutChartProps {
+    // uses for show the data when hover is going on the particular section
     labels: string[]; 
+    // uses for data
     data: number[];
+    // uses for data section background color
     backgroundColor: string[];
+    // uses for data border thinckness 
     cutout?: number | string;
+    // uses for data information
     legends?: boolean;
+    // uses for two or more data gapping difference
     offset?: number[];
 };
 
@@ -190,9 +204,13 @@ export const DoughnutChart = ({
 
 // Pie Charts
 interface PieChartProps {
+    // uses for show the data when hover is going on the particular section
     labels: string[]; 
+    // uses for data
     data: number[];
+    // use for data or section background color
     backgroundColor: string[];
+    // uses for data gapping diiference
     offset?: number[];
 };
 
