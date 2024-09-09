@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
 
@@ -23,7 +23,7 @@ const Toss = lazy(() => import("./pages/apps/Toss"));
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/admin-dashboard/">
       <Suspense fallback={<Loader />}>
         <Routes>
         {/* <Route path="/" element={<Link to="/admin/dashboard"><button className="app">Visit Dashboard</button></Link>} /> */}
