@@ -26,7 +26,7 @@ const App = () => {
     <Router basename="/dashboard">
       <Suspense fallback={<Loader />}>
         <Routes>
-        <Route path="/" element={<Link to="/admin/dashboard"><button className="app">Visit Dashboard</button></Link>} />
+        <Route path="/dashboard" element={<Link to="/admin/dashboard"><button className="app">Visit Dashboard</button></Link>} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/products" element={<Products />} />
           <Route path="/admin/transaction" element={<Transaction />} />
