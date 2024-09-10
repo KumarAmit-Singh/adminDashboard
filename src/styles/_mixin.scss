@@ -41,10 +41,10 @@
     $bgColor: inherit,
     $border: none
 ) {
-    padding: $p;
-    border: $border;
-    background-color: $bgColor;
     width: $w;
+    padding: $p;
+    background-color: $bgColor;
+    border: $border;
     outline: none;
 }
 
