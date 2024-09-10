@@ -23,7 +23,7 @@ const Toss = lazy(() => import("./pages/apps/Toss"));
 
 const App = () => {
   return (
-    <Router basename="/admin/dashboard">
+    <Router>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
