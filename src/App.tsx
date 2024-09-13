@@ -45,7 +45,7 @@ const App = () => {
 
 
           {/* Apps */}
-          <Route path="/adminDashboardapp/stopwatch" element={<Stopwatch />} />
+          <Route path="/adminDashboard/app/stopwatch" element={<Stopwatch />} />
           <Route path="/adminDashboard/app/coupon" element={<Coupon />} />
           <Route path="/adminDashboard/app/toss" element={<Toss />} />
 
