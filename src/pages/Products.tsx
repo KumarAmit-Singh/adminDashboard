@@ -48,7 +48,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -57,7 +57,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -66,7 +66,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -75,7 +75,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -84,7 +84,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -93,7 +93,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -102,7 +102,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -111,7 +111,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -120,7 +120,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -129,7 +129,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -138,7 +138,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -147,7 +147,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -156,7 +156,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -165,7 +165,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -174,7 +174,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -183,7 +183,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -192,7 +192,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -201,7 +201,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -210,7 +210,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -219,7 +219,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -228,7 +228,7 @@ const arr:DataType[] = [
     name: "Puma Shoes Air Jordan Cook Nigga 2023",
     price: 690,
     stock: 39,
-    action: <Link to="/admin/products/Shoes">
+    action: <Link to="/adminDashboard/products/Shoes">
       Manage
     </Link>,
   },
@@ -237,7 +237,7 @@ const arr:DataType[] = [
     name: "Macbook",
     price: 23222,
     stock: 213,
-    action: <Link to="/admin/products/laptop">
+    action: <Link to="/adminDashboard/products/laptop">
       Manage
     </Link>,
   },
@@ -248,7 +248,7 @@ const arr:DataType[] = [
   //   name: "Camera",
   //   price: 12732,
   //   stock: 27,
-  //   action: <Link to="/admin/product/camera">
+  //   action: <Link to="/adminDashboard/product/camera">
   //     Manage
   //   </Link>,
   // },
@@ -277,7 +277,7 @@ const Products = () => {
       </main>
 
       {/* + button and all of the items using in the NewProduct.tsx */}
-      <Link to='/admin/products/new' 
+      <Link to='/adminDashboard/products/new' 
         className="create-product-btn">
           <FaPlus />
       </Link>
