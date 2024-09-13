@@ -106,25 +106,25 @@ const DivOne = ({ location }:{ location: Location }) => (
         <ul>
             {/* used for nevigate the pages */}
             <Li 
-                url="/admin/dashboard" 
+                url="/adminDashboard/dashboard" 
                 text="Dashboard" 
                 Icon={RiDashboardFill} 
                 location={location} 
             />
             <Li 
-                url="/admin/products" 
+                url="/adminDashboard/products" 
                 text="Products" 
                 Icon={RiShoppingBag3Fill} 
                 location={location} 
             />
             <Li 
-                url="/admin/customers" 
+                url="/adminDashboard/customers" 
                 text="Customers" 
                 Icon={IoIosPeople} 
                 location={location} 
             />
             <Li 
-                url="/admin/transaction" 
+                url="/adminDashboard/transaction" 
                 text="Transactions" 
                 Icon={AiFillFileText} 
                 location={location} 
@@ -139,19 +139,19 @@ const DivTwo = ({ location }:{ location: Location }) => (
         <ul>
             {/* used for navigate the pages */}
             <Li 
-                url="/admin/chart/bar" 
+                url="/adminDashboard/chart/bar" 
                 text="Bar" 
                 Icon={FaChartBar} 
                 location={location} 
             />
             <Li 
-                url="/admin/chart/pie" 
+                url="/adminDashboard/chart/pie" 
                 text="Pie" 
                 Icon={FaChartPie} 
                 location={location} 
             />
             <Li 
-                url="/admin/chart/line" 
+                url="/adminDashboard/chart/line" 
                 text="Line" 
                 Icon={FaChartLine} 
                 location={location} 
@@ -166,19 +166,19 @@ const DivThree = ({ location }:{ location: Location }) => (
         <ul>
             {/* used for nevigate the pages */}
             <Li 
-                url="/admin/app/stopwatch" 
+                url="/adminDashboard/app/stopwatch" 
                 text="Stopwatch" 
                 Icon={FaStopwatch} 
                 location={location} 
             />
             <Li 
-                url="/admin/app/coupon" 
+                url="/adminDashboard/app/coupon" 
                 text="Coupon" 
                 Icon={RiCoupon3Fill} 
                 location={location} 
             />
             <Li 
-                url="/admin/app/toss" 
+                url="/adminDashboard/app/toss" 
                 text="Toss" 
                 Icon={FaGamepad} 
                 location={location} 
