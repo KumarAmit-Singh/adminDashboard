@@ -150,7 +150,7 @@ const ProductCard = (
   <div className="transaction-product-card">
     <img src={photo} alt={name} />
 
-    <Link to={`/product/${_id}`}>{name}</Link>
+    <Link to={`admin/dashboard/product/${_id}`}>{name}</Link>
     <span>
       ${price} x {quantity} = ${price * quantity}
     </span>
