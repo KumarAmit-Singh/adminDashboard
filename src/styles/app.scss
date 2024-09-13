@@ -230,13 +230,13 @@ button {
 
 // main page button style or dashboard page button style(close)
 .app {
-    margin: 18rem 0 0 38rem;
-    color: white;
+    max-width: 22rem;
     padding: 1rem;
+    margin: 18rem 10rem 0 35rem;
+    border-radius: 0.3125rem;
+    color: white;
     border: none;
     background-color: rgb(5, 107, 224);
-    width: 20%;
-    border-radius: 0.3125rem;
     font-size: 1.5rem;
     cursor: pointer;
 
