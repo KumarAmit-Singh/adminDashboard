@@ -49,7 +49,7 @@ const arr: DataType[] = [
   status: 
     <span className="red">Processing</span>,
   action:
-    <Link to="/adminDashboard/transaction/amount">
+    <Link to="/admindashboard/transaction/amount">
       Manage
     </Link>
   },
@@ -62,7 +62,7 @@ const arr: DataType[] = [
   status: 
     <span className="green">Shipped</span>,
   action:
-    <Link to="/adminDashboard/transaction/amount">
+    <Link to="/admindashboard/transaction/amount">
       Manage
     </Link>
   },
@@ -75,7 +75,7 @@ const arr: DataType[] = [
   status: 
     <span className="purple">Delivered</span>,
   action:
-    <Link to="/adminDashboard/transaction/amount">
+    <Link to="/admindashboard/transaction/amount">
       Manage
     </Link>
   },
