@@ -29,31 +29,31 @@ const App = () => {
           <Route 
             path="/adminDashboard" 
             element={
-              <Link to="/admin/dashboard"><button className="app">Visit Dashboard</button></Link>
+              <Link to="/adminDashboard/dashboard"><button className="app">Visit Dashboard</button></Link>
             }> 
           </Route>
-          <Route path="/admin/dashboard" element={<Dashboard />} />
-          <Route path="/admin/products" element={<Products />} />
-          <Route path="/admin/transaction" element={<Transaction />} />
-          <Route path="/admin/customers" element={<Customers />} />
+          <Route path="/adminDashboard/dashboard" element={<Dashboard />} />
+          <Route path="/adminDashboard/products" element={<Products />} />
+          <Route path="/adminDashboardtransaction" element={<Transaction />} />
+          <Route path="/adminDashboardcustomers" element={<Customers />} />
 
 
           {/* Charts */}
-          <Route path="/admin/chart/bar" element={<BarCharts />} />
-          <Route path="/admin/chart/line" element={<LineCharts />} />
-          <Route path="/admin/chart/pie" element={<PieCharts />} />
+          <Route path="/adminDashboardchart/bar" element={<BarCharts />} />
+          <Route path="/adminDashboardchart/line" element={<LineCharts />} />
+          <Route path="/adminDashboardchart/pie" element={<PieCharts />} />
 
 
           {/* Apps */}
-          <Route path="/admin/app/stopwatch" element={<Stopwatch />} />
-          <Route path="/admin/app/coupon" element={<Coupon />} />
-          <Route path="/admin/app/toss" element={<Toss />} />
+          <Route path="/adminDashboardapp/stopwatch" element={<Stopwatch />} />
+          <Route path="/adminDashboard/app/coupon" element={<Coupon />} />
+          <Route path="/adminDashboard/app/toss" element={<Toss />} />
 
 
           {/* Management */}
-          <Route path="/admin/products/new" element={<NewProduct />} />
-          <Route path="/admin/products/:id" element={<ProductManagement />} />
-          <Route path="/admin/transaction/:id" element={<TransactionManagement />} />
+          <Route path="/adminDashboard/products/new" element={<NewProduct />} />
+          <Route path="/adminDashboard/products/:id" element={<ProductManagement />} />
+          <Route path="/adminDashboard/transaction/:id" element={<TransactionManagement />} />
         </Routes>
       </Suspense>
     </Router>
