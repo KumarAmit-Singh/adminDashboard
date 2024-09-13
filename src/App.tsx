@@ -34,14 +34,14 @@ const App = () => {
           </Route>
           <Route path="/adminDashboard/dashboard" element={<Dashboard />} />
           <Route path="/adminDashboard/products" element={<Products />} />
-          <Route path="/adminDashboardtransaction" element={<Transaction />} />
-          <Route path="/adminDashboardcustomers" element={<Customers />} />
+          <Route path="/adminDashboard/transaction" element={<Transaction />} />
+          <Route path="/adminDashboard/customers" element={<Customers />} />
 
 
           {/* Charts */}
-          <Route path="/adminDashboardchart/bar" element={<BarCharts />} />
-          <Route path="/adminDashboardchart/line" element={<LineCharts />} />
-          <Route path="/adminDashboardchart/pie" element={<PieCharts />} />
+          <Route path="/adminDashboard/chart/bar" element={<BarCharts />} />
+          <Route path="/adminDashboard/chart/line" element={<LineCharts />} />
+          <Route path="/adminDashboard/chart/pie" element={<PieCharts />} />
 
 
           {/* Apps */}
