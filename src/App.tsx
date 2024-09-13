@@ -27,33 +27,33 @@ const App = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route 
-            path="/adminDashboard" 
+            path="/admindashboard" 
             element={
-              <Link to="/adminDashboard/dashboard"><button className="app">Visit Dashboard</button></Link>
+              <Link to="/admindashboard/dashboard"><button className="app">Visit Dashboard</button></Link>
             }> 
           </Route>
-          <Route path="/adminDashboard/dashboard" element={<Dashboard />} />
-          <Route path="/adminDashboard/products" element={<Products />} />
-          <Route path="/adminDashboard/transaction" element={<Transaction />} />
-          <Route path="/adminDashboard/customers" element={<Customers />} />
+          <Route path="/admindashboard/dashboard" element={<Dashboard />} />
+          <Route path="/admindashboard/products" element={<Products />} />
+          <Route path="/admindashboard/transaction" element={<Transaction />} />
+          <Route path="/admindashboard/customers" element={<Customers />} />
 
 
           {/* Charts */}
-          <Route path="/adminDashboard/chart/bar" element={<BarCharts />} />
-          <Route path="/adminDashboard/chart/line" element={<LineCharts />} />
-          <Route path="/adminDashboard/chart/pie" element={<PieCharts />} />
+          <Route path="/admindashboard/chart/bar" element={<BarCharts />} />
+          <Route path="/admindashboard/chart/line" element={<LineCharts />} />
+          <Route path="/admindashboard/chart/pie" element={<PieCharts />} />
 
 
           {/* Apps */}
-          <Route path="/adminDashboard/app/stopwatch" element={<Stopwatch />} />
-          <Route path="/adminDashboard/app/coupon" element={<Coupon />} />
-          <Route path="/adminDashboard/app/toss" element={<Toss />} />
+          <Route path="/admindashboard/app/stopwatch" element={<Stopwatch />} />
+          <Route path="/admindashboard/app/coupon" element={<Coupon />} />
+          <Route path="/admindashboard/app/toss" element={<Toss />} />
 
 
           {/* Management */}
-          <Route path="/adminDashboard/products/new" element={<NewProduct />} />
-          <Route path="/adminDashboard/products/:id" element={<ProductManagement />} />
-          <Route path="/adminDashboard/transaction/:id" element={<TransactionManagement />} />
+          <Route path="/admindashboard/products/new" element={<NewProduct />} />
+          <Route path="/admindashboard/products/:id" element={<ProductManagement />} />
+          <Route path="/admindashboard/transaction/:id" element={<TransactionManagement />} />
         </Routes>
       </Suspense>
     </Router>
